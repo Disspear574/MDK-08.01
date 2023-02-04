@@ -1,0 +1,7 @@
+{
+    "workbench.colorTheme": "Ayu Dark",
+    "workbench.preferredDarkColorTheme": "Ayu Dark",
+    "window.autoDetectColorScheme": true,
+    "files.autoSave": "onFocusChange",
+    "editor.fontSize": 16
+}
