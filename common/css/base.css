@@ -7,7 +7,7 @@
   box-sizing: border-box;
   outline: none;
   transition: all 0.2s;
- /* border: solid;   */
+
 }
 html {
   /* Плавная прокрутка */
@@ -40,4 +40,4 @@ section {
   backdrop-filter: blur(3px);
   padding: 40px;
   box-shadow: 10px 10px 15px #00000063;
-}
+  width: 60%; }

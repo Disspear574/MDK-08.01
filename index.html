@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 
 <head>
     <meta charset="UTF-8">
@@ -7,22 +7,24 @@
     <link rel="stylesheet" href="/common/css/font.css">
     <link rel="stylesheet" href="/common/css/style.css">
     <link rel="stylesheet" href="/common/css/base.css">
+    <link rel="stylesheet" href="/common/css/footer.css">
+    <link rel="stylesheet" href="/common/css/filter.css">
+    <link rel="stylesheet" href="/common/css/idk.css">
     <link rel="shortcut icon" href="common\img\favicon\favicon.ico" type="image/x-icon">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/f2cc8d7f38.js" crossorigin="anonymous"></script>
 </head>
-
 <body>
-    <!-- Шапка -->
+<!-- Шапка -->
     <header class="header">
         <h1 class="header__logo" onclick="window.location='/index.html';">Шангри-Ла</h1>
         <nav class="nav">
             <div class="header__phone" onclick="window.open('tel:83431224523')" ;>8-343-122-45-23</div>
         </nav>
     </header>
-    <!-- Слоган -->
+<!-- Слоган -->
     <section class="slogan">
         <div class="slogan-bg" style="background-image: url(/common/img/hero.jpg);"></div>
         <div class="blur">
@@ -31,8 +33,11 @@
             <a href="#bid" class="slogan__btn">Подобрать тур</a>
         </div>
     </section>
+<!-- Особенности -->
+<div class="blocks">
     <section class="particularity">
-        <h2 class="section-title">Особенности горящих туров</h2>
+        <div class="blocka">
+        <h2 class="section-title">Особенности горящих туров</h2></div>
         <h3 class="particularity__title">Возможность отправиться в поездку немедленно</h3>
         <p class="particularity__text">Не все туристы имеют возможность заранее спланировать поездку. Иногда решение об
             отпуске принимается спонтанно, и времени на подготовку путешествия попросту не остается.
@@ -47,9 +52,12 @@
             дней, которые можно будет провести на отдыхе в другой стране. Это связано с тем, что предлагаемый горящий
             тур уже предварительно скомплектован туроператором и не подлежит изменению.
         </p>
+    </div>
+    </div>
     </section>
-    <!-- Горящие туры -->
+<!-- Горящие туры -->
     <section class="filter">
+        <div class="block">
         <h2 class="section-title">Горящие туры по направлениям</h2>
         <div class="ff-container">
             <input type="radio" id="all" name="radio" class="ff-all">
@@ -62,6 +70,7 @@
             <label for="kit">Китай</label>
             <input type="radio" id="viet" name="radio" class="ff-viet">
             <label for="viet">Вьетнам</label>
+        </div></div>
             <ul class="grid ff-item">
                 <li class="card item-rus">
                     <img src="/common/img/t1.jpg" alt="image">
@@ -114,11 +123,11 @@
             </ul>
         </div>
     </section>
-    <!--Консультанты  -->
+<!--Консультанты  -->
     <section class="manager">
-        <h2 class="section-title">Наши Консультанты</h2>
+        <div class="block"><h2 class="section-title">Наши Консультанты</h2>
         <p class="manager__text">У нас работают профессионалы с огромным опытом. Мы заботимся, о том, чтобы вы хорошо
-            отдохнули.</p>
+            отдохнули.</p></div>
         <ul class="grid">
             <li class="team-list">
                 <img src="common/img/manager1.jpg" alt="manager" class="team-list__img">
@@ -134,7 +143,7 @@
             </li>
         </ul>
     </section>
-    <!-- Видео фон -->
+<!-- Видео фон -->
     <div class="video-bg">
         <video src="/common/img/vid/video.mp4" type="video/mp4" muted autoplay loop></video>
         <div class="blur">
@@ -143,12 +152,14 @@
                 <h2 class="content-subtitle">Успейте поймать самые выгодные предложения!</h2>
             </div>
         </div>
-        </div>
-        <!-- Наши преймущества -->
-<section class="features" style="color: #414a4f;
+    </div>
+<!-- Наши преимущества -->
+    <section class="features" style="color: #414a4f;
 font-size: 20px;">
+<div class="block">
     <h2 class="section-title">Наши преимущества</h2>
-    <p class="features-text">Лучший онлайн поиск туров по России и за границей</p>
+    <p class="features-text">Лучший онлайн поиск туров по России и за границей</p></div>
+    <div class="blockd">
     <ul class="grid-list">
         <li class="list-item">
             <i class="fa fa-chevron-down"></i>
@@ -181,29 +192,32 @@ font-size: 20px;">
             </p>
         </li>
     </ul>
-</section>
-<!-- Отзывы -->
-<div class="reviews" >
-    <div class="item item-1"><span>Отдыхали в Таиланде с 15.10.2022 г. От данной турфирмы. Отдых получился отличный, с погодой угадали, без дождей. Спасибо всем сотрудникам турфирмы Шангри-Ла!!!</span></div>
-    <div class="item item-2"><span>Благодарны очень за организацию тура в Таиланд менеджеру Светлане. Информацию предоставила в полном объеме, доброжелательная, активная, оперативно были выполнены все наши пожелания!
-    </span></div>
-    <div class="item item-1"><span>Хочу выразить огромную благодарность Сергею. Спасибо огромное за наш прекрасный отпуск! Спасибо за выбор страны и отеля. Мы довольны!
-    </span></div>
-    <div class="item item-2"><span>С 16 по 27 октября отдыхали в Таиланде, Паттайе, отеле "Амбассадор Сити". Выражаю огромную благодарность менеджеру Олесе за удачно подобранный тур: удобное время вылета, превосходный отель, чудесный пляж.
-    </span></div>
 </div>
+    </section>
+<!-- Отзывы -->
+    <div class="reviews" >
+    <div class="item"><span>Отдыхали в Таиланде с 15.10.2022 г. От данной турфирмы. Отдых получился отличный, с погодой угадали, без дождей. Спасибо всем сотрудникам турфирмы Шангри-Ла!!!</span></div>
+    <div class="item"><span>Благодарны очень за организацию тура в Таиланд менеджеру Светлане. Информацию предоставила в полном объеме, доброжелательная, активная, оперативно были выполнены все наши пожелания!
+    </span></div>
+    <div class="item"><span>Хочу выразить огромную благодарность Сергею. Спасибо огромное за наш прекрасный отпуск! Спасибо за выбор страны и отеля. Мы довольны!
+    </span></div>
+    <div class="item"><span>С 16 по 27 октября отдыхали в Таиланде, Паттайе, отеле "Амбассадор Сити". Выражаю огромную благодарность менеджеру Олесе за удачно подобранный тур: удобное время вылета, превосходный отель, чудесный пляж.
+    </span></div>
+    </div>
 <!-- О компании/подбор тура/форма -->
-<section class="selection-tour" id="bid">
+    <section class="selection-tour" id="bid">
+    <div class="block">
     <h2 class="selection-title">Заявка на подбор тура</h2>
     <p class="section-text" style="color: #414a4f">Наша компания создана для Вашего комфорта. Мы сделали выбор и покупку тура максимально удобным для Вас. В нашем поиске можно найти путешествия от 80-ти туроператоров. Оплата туров происходит через защищенные каналы связи. Если Вам понадобится помощь специалиста в подборе тура, наши менеджеры всегда, с радостью подберут путешествие по Вашим запросам и будут с Вами на связи на протяжении всего отдыха. Покупая тур в нашей компании, Вы не платите никаких дополнительных комиссий и сборов, Вы бронируете тур по цене туроператора. Чтобы сделать заявку на подбор тура, заполните все поля формы и нажмите Отправить заявку.
     </p>
-    <form action="">
+</div>
+    <!-- <form action="">
 
-    </form>
+    </form> -->
 
-</section>
+    </section>
 <!-- футер -->
-<footer class="footer">
+    <footer class="footer">
     <ul class="footer-social">
         <li class="social__item"><a href="#" class="social-link"><i class="fa fa-twitter-square"></i></a></li>
         <li class="social__item"><a href="#" class="social-link"><i class="fa fa-facebook-square"></i></a></li>
@@ -212,8 +226,29 @@ font-size: 20px;">
         <li class="social__item"><a href="#" class="social-link"><i class="fa fa-github-square"></i></i></a></li>
     </ul>
     <p class="footer-text">Сайт разработал Варовин В.А.</p>
-    <div class="buttonup"><a href="#" class="up" title="Вверх"><img src="/common/img/up.png" alt="up"class="f_img"></a></div>
-</footer>
+     <button onclick="topFunction()" id="btnup" title="вверх">Вверх</button> 
+    <!-- <a href="#" class="btn-up">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
+                  <path d="M214.6 41.4c-12.5-12.5-32.8-12.5-45.3 0l-160 160c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L160 141.2V448c0 17.7 14.3 32 32 32s32-14.3 32-32V141.2L329.4 246.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3l-160-160z"/>
+              </svg> -->
+      </a>
+    </footer>
+<script>
+    let mybutton = document.getElementById("btnup");
+    window.onscroll = function() {scrollFunction()};
+    
+    function scrollFunction() {
+      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        mybutton.style.display = "block";
+      } else {
+        mybutton.style.display = "none";
+      }
+    }
+    function topFunction() {
+      document.body.scrollTop = 0;
+      document.documentElement.scrollTop = 0;
+    }
+    </script>
 <!-- <div class="social-link" onclick="window.open('#')" ;><i class="fa fa-twitter-square"></i></div>
 <div class="social-link" onclick="window.open('#')" ;><i class="fa fa-facebook-square"></i></div>
 <div class="social-link" onclick="window.open('#')" ;><i class="fa fa-snapchat-square"></i></div>
