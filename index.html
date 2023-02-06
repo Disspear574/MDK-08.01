@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <title>Шангри-Ла</title>
@@ -10,25 +11,130 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
-    <script src="https://kit.fontawesome.com/f2cc8d7f38.js" crossorigin="anonymous"></script>   
+    <script src="https://kit.fontawesome.com/f2cc8d7f38.js" crossorigin="anonymous"></script>
 </head>
+
 <body>
     <!-- Шапка -->
     <header class="header">
         <h1 class="header__logo" onclick="window.location='/index.html';">Шангри-Ла</h1>
         <nav class="nav">
-<div class="header__phone" onclick="window.open('tel:83431224523')";>8-343-122-45-23</div>
+            <div class="header__phone" onclick="window.open('tel:83431224523')" ;>8-343-122-45-23</div>
         </nav>
     </header>
     <!-- Слоган -->
     <section class="slogan">
         <div class="slogan-bg" style="background-image: url(/common/img/hero.jpg);"></div>
         <div class="blur">
-        <h1 class="slogan__title">С нами путешествовать просто</h1>
-        <h2 class="slogan__subtitle">Мы обо всем позаботились - отдыхайте!</h2>
-        <a href="#bid" class="slogan__btn">Подобрать тур</a>
-    </div>
-
+            <h1 class="slogan__title">С нами путешествовать просто</h1>
+            <h2 class="slogan__subtitle">Мы обо всем позаботились - отдыхайте!</h2>
+            <a href="#bid" class="slogan__btn">Подобрать тур</a>
+        </div>
     </section>
+    <section class="particularity">
+        <h2 class="section-title">Особенности горящих туров</h2>
+        <h3 class="particularity__title">Возможность отправиться в поездку немедленно</h3>
+        <p class="particularity__text">Не все туристы имеют возможность заранее спланировать поездку. Иногда решение об
+            отпуске принимается спонтанно, и времени на подготовку путешествия попросту не остается.
+            Возможность отправиться в поездку немедленно</p>
+        <h3 class="particularity__title">Возможность отправиться в поездку немедленно</h3>
+        <p class="particularity__text">Между покупкой турпакета и непосредственным путешествием проходит совсем мало
+            времени. Таким образом, туристу не приходится томиться в ожидании поездки, а можно наслаждаться отдыхом и
+            новыми впечатлениями практически сразу.
+            Отсутствие возможности выбора</p>
+        <h3 class="particularity__title">Отсутствие возможности выбора</h3>
+        <p class="particularity__text">Определенного типа отеля, даты и времени вылета самолета, а также количества
+            дней, которые можно будет провести на отдыхе в другой стране. Это связано с тем, что предлагаемый горящий
+            тур уже предварительно скомплектован туроператором и не подлежит изменению.
+        </p>
+    </section>
+    <!-- Горящие туры -->
+    <section class="filter">
+        <h2 class="section-title">Горящие туры по направлениям</h2>
+        <div class="ff-container">
+            <input type="radio" id="all" name="radio" class="ff-all">
+            <label for="all">Все направления</label>
+            <input type="radio" id="rus" name="radio" class="ff-rus">
+            <label for="rus">Россия</label>
+            <input type="radio" id="ind" name="radio" class="ff-ind">
+            <label for="ind">Индия</label>
+            <input type="radio" id="kit" name="radio" class="ff-kit">
+            <label for="kit">Китай</label>
+            <input type="radio" id="viet" name="radio" class="ff-viet">
+            <label for="viet">Вьетнам</label>
+            <ul class="grid ff-item">
+                <li class="card item-rus">
+                    <img src="/common/img/t1.jpg" alt="image">
+                    <h3 class="card-resort">Адлер</h3>
+                    <h4 class="card-price">28600 руб.</h4>
+                    <p class="card-country">Россия</p>
+                </li>
+                <li class="card item-rus">
+                    <img src="/common/img/t2.jpg" alt="image">
+                    <h3 class="card-resort">Крым</h3>
+                    <h4 class="card-price">38750 руб.</h4>
+                    <p class="card-country">Россия</p>
+                </li>
+                <li class="card item-ind">
+                    <img src="/common/img/t3.jpg" alt="image">
+                    <h3 class="card-resort">Бали</h3>
+                    <h4 class="card-price"> 88600 р.</h4>
+                    <p class="card-country">Индонезия</p>
+                </li>
+                <li class="card item-ind">
+                    <img src="/common/img/t4.jpg" alt="image">
+                    <h3 class="card-resort">Кута</h3>
+                    <h4 class="card-price">81666 руб.</h4>
+                    <p class="card-country">Индонезия</p>
+                </li>
+                <li class="card item-kit">
+                    <img src="/common/img/t5.jpg" alt="image">
+                    <h3 class="card-resort">Санья</h3>
+                    <h4 class="card-price"> 48600 руб.</h4>
+                    <p class="card-country">Китай</p>
+                </li>
+                <li class="card item-kit">
+                    <img src="/common/img/t6.jpg" alt="image">
+                    <h3 class="card-resort">Пекин</h3>
+                    <h4 class="card-price">58750 руб.</h4>
+                    <p class="card-country">Китай</p>
+                </li>
+                <li class="card item-viet">
+                    <img src="/common/img/t7.jpg" alt="image">
+                    <h3 class="card-resort">Дананг</h3>
+                    <h4 class="card-price">62600 руб.</h4>
+                    <p class="card-country">Вьетнам</p>
+                </li>
+                <li class="card item-viet">
+                    <img src="/common/img/t8.jpg" alt="image">
+                    <h3 class="card-resort">Нянчанг</h3>
+                    <h4 class="card-price">72800 руб.</h4>
+                    <p class="card-country">Вьетнам</p>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <!--Консультанты  -->
+    <section class="manager">
+        <h2 class="section-title">Наши Консультанты</h2>
+        <p class="manager__text">У нас работают профессионалы с огромным опытом. Мы заботимся, о том, чтобы вы хорошо
+            отдохнули.</p>
+        <ul class="grid">
+            <li class="team-list">
+                <img src="common/img/manager1.jpg" alt="manager" class="team-list__img">
+                <p class="team-list__text">Светлана Астахова - менеджер по туризму консультант</p>
+            </li>
+            <li class="team-list">
+                <img src="common/img/manager2.jpg" alt="manager" class="team-list__img">
+                <p class="team-list__text">Сергей Иванов - менеджер по туризму консультант</p>
+            </li>
+            <li class="team-list">
+                <img src="common/img/manager3.jpg" alt="manager" class="team-list__img">
+                <p class="team-list__text">Олеся Михайлова - менеджер по туризму</p>
+            </li>
+        </ul>
+    </section>
+    <!-- Видео фон -->
+    
 </body>
 </html>
