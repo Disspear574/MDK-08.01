@@ -99,7 +99,8 @@
   font-size: 18px;
 }
 .team-list__img {
-  width: 350px;
+  max-width: 100%;
+  width: auto;
   object-fit: cover;
   border-radius: 5px;
   box-shadow: 0 0 3px 3px #219fa318;
@@ -221,6 +222,10 @@
   padding: 15px; 
   border-radius: 10px;
   font-size: 18px;
+}
+.blockas {
+
+  text-align: center;
 }
 /* Адаптация под планшет */
 /* Адаптация под смартфон */
