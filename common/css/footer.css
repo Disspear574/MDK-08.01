@@ -21,6 +21,7 @@
   }
   .social-link {
     color: white;
+    transition: all 0.5s;
   }
   .social-link:hover {
     color: #219fa3;

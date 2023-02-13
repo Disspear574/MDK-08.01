@@ -10,9 +10,13 @@
 }
 .slogan__btn:hover {
   background-color: #fff;
-  color: #000;
-  text-shadow: 0 0 10px rgb(0, 0, 0);
-  transition: 0.3s linear;
+  transition: 0.2s linear;
+  box-shadow: 0 0 .2rem #219fa3, 0 0 0.8rem #219fa3, 0 0 2.8rem #219fa3;
+}
+.slogan__btn:hover span {
+  text-shadow:0 0 7px #219fa3, 0 0 10px #219fa3, 0 0 21px #219fa3;
+  transition: 0.8s linear;
+  color: rgb(0, 0, 0);
 }
 .slogan__btn:active {
   box-shadow: inset 0 0 3px #219fa3;
