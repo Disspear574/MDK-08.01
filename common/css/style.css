@@ -188,23 +188,13 @@
 .item:nth-child(odd) {
   background-color: #414a4f46;
 }
-.item {
-  padding: 25px;
-  height: 50vh;
-  display: flex;
-  align-items: center;
-  flex-basis: 25%;
-  color: white;
-  border-radius: 20px;
-  margin: 10px;
-}
+
 .item span {
   line-height: 1.5;
   font-size: 0.8em;
 }
 .item:hover {
   flex-basis: 65%;
-  transition: all 1s;
 }
 /* О компании/подбор тура/ форма */
 #btnup {
@@ -223,9 +213,6 @@
   border-radius: 10px;
   font-size: 18px;
 }
-.blockas {
 
-  text-align: center;
-}
 /* Адаптация под планшет */
 /* Адаптация под смартфон */

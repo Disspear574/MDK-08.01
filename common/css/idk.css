@@ -11,6 +11,7 @@
 .slogan__btn:hover {
   background-color: #fff;
   color: #000;
+  text-shadow: 0 0 10px rgb(0, 0, 0);
   transition: 0.3s linear;
 }
 .slogan__btn:active {
@@ -23,9 +24,7 @@
 .features,
 .reviews {
   color: #414a4f;
-   background: linear-gradient(90deg, rgb(33, 159, 163) 0%, rgba(199, 160, 160, 0.793) 39%, rgba(33, 159, 163, 0.553) 100%);
-  background-repeat: no-repeat;
-  background-size: cover;
+  /* background: linear-gradient(90deg, rgb(33, 159, 163) 0%, rgba(199, 160, 160, 0.793) 39%, rgba(33, 159, 163, 0.553) 100%); */
 }
 .selection-title {
   text-align: center;
@@ -89,7 +88,7 @@
 /* Красивые Блоки */
 .block {
   border-radius: 30px;
-  background-color: #ffffff82;
+  background-color: #ffffffaa;
   -webkit-backdrop-filter: blur(25px);
   backdrop-filter: blur(25px);
   width: 60%;
@@ -103,21 +102,34 @@
   backdrop-filter: blur(25px);
   box-shadow: 10px 10px 15px #00000063;
 }
-.hot {
+.icons {
   border-radius: 30px;
-  background-color: #ffffff82;
+  background-color: #c6c6c6aa;
   -webkit-backdrop-filter: blur(25px);
   backdrop-filter: blur(25px);
   width: 60%;
-padding-top: 40px;
-  box-shadow: 10px 10px 15px #00000063; 
+  margin-top: 20px;
+  box-shadow: 10px 10px 15px #00000063;
 }
-.blockd {
+.card {
+  text-align: center;
+  line-height: 1.5;
+  margin: 20px;
   border-radius: 30px;
-  background-color: #48484862;
-  -webkit-backdrop-filter: blur(25px);
-  backdrop-filter: blur(25px);
-  width: 60%;
-margin-top: 20px;
-  box-shadow: 10px 10px 15px #00000063; 
+  background-color: #c6c6c6aa;
+  -webkit-backdrop-filter: blur(3px);
+  backdrop-filter: blur(3px);
+  padding: 40px;
+  box-shadow: 10px 10px 15px #00000063;
+}
+.item {
+  padding: 25px;
+  height: 50vh;
+  display: flex;
+  align-items: center;
+  flex-basis: 25%;
+  color: #414a4f;
+  border-radius: 20px;
+  margin: 10px;
+  transition: all 0.3s;
 }
