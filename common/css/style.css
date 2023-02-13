@@ -290,8 +290,8 @@ textarea:focus {
   flex-grow: 0;
 }
 /* стили при наведении курсора на checkbox*/
-custom-chexbox>input {
-  
+custom-chexbox>input:not(:disabled):not(:checked) {
+
 }
 
 /* Адаптация под планшет */
