@@ -476,6 +476,9 @@ textarea:focus {
   .grid-list {
     margin: 0 30px;
   }
-  
+  .reviews {
+    height: 60vh;
+    flex-flow: column;
+  }
 }
 /* Адаптация под смартфон */
