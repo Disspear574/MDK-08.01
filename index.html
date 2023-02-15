@@ -4,12 +4,14 @@
 <head>
     <meta charset="UTF-8">
     <title>Шангри-Ла</title>
+    
     <link rel="stylesheet" href="/common/css/font.css">
     <link rel="stylesheet" href="/common/css/style.css">
     <link rel="stylesheet" href="/common/css/base.css">
     <link rel="stylesheet" href="/common/css/footer.css">
     <link rel="stylesheet" href="/common/css/filter.css">
     <link rel="stylesheet" href="/common/css/idk.css">
+    <link rel="stylesheet" href="/common/css/media.css">
     <link rel="shortcut icon" href="common\img\favicon\favicon.ico" type="image/x-icon">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -340,30 +342,38 @@ font-size: 20px;">
             <li class="social__item"><a href="#" class="social-link"><i class="fa fa-github-square"></i></i></a></li>
         </ul>
         <p class="footer-text">Сайт разработал Варовин В.А.</p>
-        <button onclick="topFun()" id="btnup" title="вверх">Вверх</button>
+        <button onclick="topFunction()" id="btnup" title="вверх"><i class="fa fa-angle-double-up" aria-hidden="true"></i></button>
     </footer>
     <script>
-        let btn = document.getElementById("btnup");
-        window.onscroll = function () { b() };
-        function scroll() {
-            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-                btn.style.display = "block";
-            }
-            else {
-                    btn.style.display = "none";
-                }
-            }
-            window.addEventListener("resize", function b() { scroll() {
+let btn = document.getElementById("btnup");
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+
+if (window.matchMedia("(min-width: 1024px)").matches) {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        btn.style.display = "block"; 
+}   else {
+        btn.style.display = "none";
+}
+}   
+else {
+        btn.style.display = "none"; 
+    }
+}
+ window.addEventListener("resize", function b() { scrollFunction()})
+ function b()  {
             
-                if (window.matchMedia("(min-width: 1024px)").matches) {}   
+                 if (window.matchMedia("(min-width: 1024px)").matches) {}   
                 else {
                     btn.style.display = "none"; 
-                }
-            }})
-        function topFun() {
-            document.body.scrollTop = 0;
-            document.documentElement.scrollTop = 0;
-        }
+               }
+            }
+
+function topFunction() {
+  document.body.scrollTop = 0; // For Safari
+  document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+}
     </script>
 </body>
 
