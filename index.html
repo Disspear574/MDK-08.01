@@ -314,19 +314,19 @@ font-size: 20px;">
                         <span>позвоните</span>
                     </label>
                 </div>
-                    <div class="form-group">
-                        <label>
-                            <span>Во сколько позвонить</span>
-                            <input type="time">
-                        </label>
-                    </div>
-                    <div class="form-group2">
-                        <label>Дополнительные комментарии</label>
-                        <textarea></textarea>
-                    </div>
-                    <div class="button-form">
-                        <button type="submit" class="submit">Отправить заявку</button>
-                    </div>
+                <div class="form-group">
+                    <label>
+                        <span>Во сколько позвонить</span>
+                        <input class="time" type="time">
+                    </label>
+                </div>
+                <div class="form-group2">
+                    <label>Дополнительные комментарии</label>
+                    <textarea></textarea>
+                </div>
+                <div class="button-form">
+                    <button type="submit" class="submit">Отправить заявку</button>
+                </div>
             </form>
         </div>
     </section>
@@ -344,15 +344,22 @@ font-size: 20px;">
     </footer>
     <script>
         let btn = document.getElementById("btnup");
-        window.onscroll = function () { scrollFun() };
-
-        function scrollFun() {
+        window.onscroll = function () { b() };
+        function scroll() {
             if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
                 btn.style.display = "block";
-            } else {
-                btn.style.display = "none";
             }
-        }
+            else {
+                    btn.style.display = "none";
+                }
+            }
+            window.addEventListener("resize", function b() { scroll() {
+            
+                if (window.matchMedia("(min-width: 1024px)").matches) {}   
+                else {
+                    btn.style.display = "none"; 
+                }
+            }})
         function topFun() {
             document.body.scrollTop = 0;
             document.documentElement.scrollTop = 0;
