@@ -1,0 +1,204 @@
+/* Phone Adaptation */
+@media (min-width: 350px) and (max-width: 809px) {
+    /* Font */
+    body {
+      font-size: 14px;
+    }
+    .menu li a {
+      font-size: 14px;
+    }
+    /* Header */
+    header {
+      flex-direction: column;
+      padding-top: 20px;
+      padding-bottom: 30px;
+      margin-bottom: 0;
+      flex-wrap: nowrap;
+    }
+    header > nav {
+      margin-left: 0;
+    }
+    .menu li {
+      margin-left: 10px;
+    }
+    .sung {
+      padding-top: 30px;
+    }
+    .sing-in {
+      margin-left: 0px;
+    }
+  
+    /* Banner */
+    .container {
+      width: 100%;
+    }
+    .banner-top {
+      padding: 0;
+      background-image: none;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      text-align: center;
+      justify-content: center;
+      align-items: center;
+    }
+    .banner__title {
+      max-width: 70%;
+      margin: 50px auto 20px;
+      font-size: 25px;
+      line-height: 35px;
+    }
+    .banner__text {
+      max-width: 80%;
+      margin: 0 auto 20px;
+    }
+    .banner__link {
+      flex-basis: 100%;
+      text-decoration: none;
+      padding-top: 20px;
+      padding-right: 30px;
+    }
+    /* We design tool to unveil your superpowers */
+    .f-title {
+      font-size: 30px;
+      max-width: 80%;
+      margin: 0 auto 30px;
+      line-height: 40px;
+    }
+    .card {
+      flex-wrap: wrap;
+    }
+    .card__item {
+      flex-basis: 100%;
+    }
+    .now-btn {
+      max-width: 50%;
+    }
+  
+    /*  Some Containers */
+    .flex-container {
+      max-width: 80%;
+      margin: 0 auto;
+    }
+    .flex-img {
+      display: none;
+    }
+    .bold {
+      margin: 10px 0;
+    }
+    .design-title {
+      font-size: 25px;
+      margin-top: 0px;
+      margin-bottom: 0px;
+    }
+    section {
+      margin-bottom: 40px;
+    }
+    .list {
+      margin-top: 5px;
+    }
+    /* Need a superhero? */
+  
+    .teams-text {
+      max-width: 70%;
+    }
+    .teams-text h2 {
+      font-size: 25px;
+    }
+    .teams-line1,
+    .teams-line2 {
+      justify-content: center;
+      margin-bottom: 0;
+      max-width: 70%;
+      margin: 0 auto;
+      padding-bottom: 0;
+    }
+    .teams {
+      margin-bottom: 50px;
+    }
+  
+    /* Marketing Strategies */
+    .blog h2 {
+      text-align: center;
+      max-width: 80%;
+      margin: 0 auto;
+      font-size: 25px;
+      margin-bottom: 20px;
+    }
+    .blog-text {
+      text-align: center;
+      max-width: 80%;
+      margin: 0 auto 20px;
+      font-size: 16px;
+    }
+    .slider {
+      padding: 0;
+      margin: 0;
+    }
+    .slide__item {
+      text-align: center;
+      flex-basis: 100%;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+  
+    .slide__item img {
+      width: 360px;
+    }
+    .link h3 {
+      font-size: 15px;
+    }
+  
+  
+    /* Fooooooooter */
+    footer {
+      padding-top: 30px;
+      padding-bottom: 30px;
+    }
+    .footer-inner {
+      justify-content: space-around;
+      max-width: 100%;
+    }
+    .footer-inner a {
+      flex-basis: 100%;
+      text-align: center;
+      line-height: 20px;
+      padding-bottom: 20px;
+    }
+    footer-link1 {
+      flex-basis: 50%;
+    }
+    .footer-inner h4 {
+      margin-bottom: 10px;
+    }
+    .footer-form h4 {
+      text-align: center;
+      padding-top: 20px;
+      margin-bottom: 25px;
+      width: 80%;
+      font-size: 15px;
+    }
+    .footer-form {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    .footer-form input {
+      
+      flex-basis: 70%;
+      width: 70%;
+    }
+    .form-btn {
+      font-size: 20px;
+      flex-basis: 40%;
+      margin-left: 0;
+      margin-bottom: 0;
+      padding: 18px;
+    }
+  }
+  @media (min-width: 861px) and (max-width: 1200px) {
+    .banner__text {
+      max-width: 90%;
+    }
+  }
