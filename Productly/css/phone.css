@@ -1,5 +1,5 @@
 /* Phone Adaptation */
-@media (min-width: 350px) and (max-width: 809px) {
+@media (min-width: 350px) and (max-width: 803px) {
     /* Font */
     body {
       font-size: 14px;
@@ -116,7 +116,12 @@
     .teams {
       margin-bottom: 50px;
     }
-  
+  .line1 {
+    flex-basis: 100%;
+  }
+  .line1 p {
+    max-width: 80%;
+  }
     /* Marketing Strategies */
     .blog h2 {
       text-align: center;
@@ -145,6 +150,9 @@
   
     .slide__item img {
       width: 360px;
+    }
+    .slide__item p {
+      flex-basis: 100%;
     }
     .link h3 {
       font-size: 15px;

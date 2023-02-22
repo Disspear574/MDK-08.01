@@ -1,5 +1,5 @@
 /* Tablet Adaptation */
-@media (min-width: 810px) and (max-width: 1200px) {
+@media (min-width: 804px) and (max-width: 1200px) {
     /* Header */
     header {
       flex-direction: column;
