@@ -26,7 +26,7 @@
 	"editor.glyphMargin": false,
 	"editor.scrollbar.horizontal": "hidden",
 	"editor.scrollbar.vertical": "hidden",
-	"workbench.colorTheme": "Default Light+",
+	"workbench.colorTheme": "Default Dark+ Experimental",
 	"workbench.iconTheme": "ayu",
 	"workbench.layoutControl.enabled": false,
 	"editor.fontSize": 18,
