@@ -86,7 +86,10 @@
 
 	//Emmet
 	"emmet.triggerExpansionOnTab": true,
-	"emmet.showExpandedAbbreviation": "never",
+	"emmet.showExpandedAbbreviation": "always",
+	"emmet.showSuggestionsAsSnippets": true,
+	"editor.snippetSuggestions": "top",
+
 	//Разрешить уменьшение размера вкладок, когда доступного места недостаточно для отображения всех вкладок одновременно.
 	"workbench.editor.tabSizing": "shrink",
 	"workbench.startupEditor": "newUntitledFile",
@@ -165,7 +168,6 @@
 	},
 	"editor.hideCursorInOverviewRuler": true,
 	"git.enableSmartCommit": true,
-
 	"files.exclude": {
 		"**._**": true,
 		"**/.expo": true,
@@ -179,12 +181,7 @@
 	"[php]": {
 		"editor.defaultFormatter": "kokororin.vscode-phpfmt"
 	},
-	"github.copilot.enable": {
-		"*": true,
-		"yaml": false,
-		"plaintext": true,
-		"markdown": false
-	},
+
 	"workbench.productIconTheme": "fluent-icons",
 	"files.autoSave": "onFocusChange",
 	"git.autofetch": true
