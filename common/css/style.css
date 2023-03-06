@@ -1,0 +1,30 @@
+.gallery {
+	padding: 0;
+	margin: 0;
+	max-width: 80%;
+	list-style: none;
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	gap: 20px;
+}
+.gallery__item {
+	display: grid;
+	grid-template-areas: 'photo photo' 'title text';
+	grid-template-rows: 1fr auto;
+}
+.gallery__item-title {
+	grid-area: title;
+	font-size: 1em;
+}
+.gallery__item-text {
+	grid-area: text;
+	margin: 0;
+	justify-self: end;
+}
+.gallery__item-photo {
+	grid-area: photo;
+	width: 100%;
+	margin-bottom: 20px;
+	aspect-ratio: 1/1;
+	/* соотношение сторон */
+}
