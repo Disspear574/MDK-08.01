@@ -1,7 +1,8 @@
 {
-    "workbench.colorTheme": "Ayu Dark",
+    "workbench.colorTheme": "Default Dark+ Experimental",
     "workbench.preferredDarkColorTheme": "Ayu Dark",
     "window.autoDetectColorScheme": true,
     "files.autoSave": "onFocusChange",
-    "editor.fontSize": 16
+    "editor.fontSize": 16,
+    "editor.fontFamily": "Dank Mono ,SF Mono Regular, 'Courier New', monospace"
 }
