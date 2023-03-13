@@ -1,0 +1,79 @@
+:root {
+  --title-color: #1c093c;
+  --blur-color: #6f6df4
+}
+*,
+*::before,
+*::after {
+  font-family: "Roboto", sans-serif;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-weight: 500;
+}
+body {
+  height: 100vh;
+  background: linear-gradient(135deg, var(--blur-color), #4c46f5);
+}
+.container {
+  background-color: #fff;
+  width: 70%;
+  min-width: 420px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  padding: 35px 50px;
+  border-radius: 10px;
+  box-shadow: 20px 30px 25px #00000029;
+}
+h1 {
+  font-size: 30px;
+  text-align: center;
+  color: var(--title-color);
+}
+p {
+  position: relative;
+  margin: auto;
+  text-align: center;
+  width: 100%;
+  font-size: 16px;
+}
+form {
+  width: 100%;
+  position: relative;
+  margin: 30px auto 0 auto;
+}
+.row {
+  width: 100%;
+  display: grid;
+  gap: 20px 30px;
+  margin-bottom: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+label {
+  color: var(--title-color);
+}
+input,
+textarea {
+  width: 100%;
+  font-weight: 400;
+  padding: 8px 10px;
+  border-radius: 5px;
+  margin-top: 5px;
+  border: 1px solid #c4cae0;
+  outline: none;
+}
+textarea {
+  resize: none;
+}
+textarea:focus, input:focus {
+  border-color: var(--blur-color);
+}
+button {
+  border: none;
+  padding: 10px 20px;
+  color: #fff;
+  border-radius: 8px;
+  background: linear-gradient(150deg, var(--blur-color), #4c46f5);
+}

@@ -1,11 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="common/css/style.css">
-    <title></title>
+    <title>form grid</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
 </head>
+
 <body>
-l
+    <div class="container">
+        <h1>Адаптивная форма на гридах</h1>
+        <p>Учимся создавать форму</p>
+        <form action="#">
+            <div class="row">
+                <div class="column">
+                    <label for="name">Ваше имя</label>
+                    <input type="text" id="name" placeholder="Введите ваше имя">
+                </div>
+                <div class="column">
+                    <label for="email">Ваша почта</label>
+                    <input type="email" id="email" placeholder="Введите вашу почту">
+                </div>
+            </div>
+            <div class="row">
+                <div class="column">
+                    <label for="pass">Паспортные данные</label>
+                    <input type="text" id="pass" placeholder="Введите данные">
+                </div>
+                <div class="column">
+                    <label for="tel">Ваш телефон</label>
+                    <input type="tel" id="tel" placeholder="Введите ваш номер телефона">
+                </div>
+            </div>
+            <div class="row">
+                <div class="column">
+                    <label for="data">Дополнительная информация</label>
+                    <textarea id="data">Укажите дополнительные данные</textarea>
+                </div>
+            </div>
+            <button type="submit">Отправить</button>
+        </form>
+    </div>
 </body>
+
 </html>
