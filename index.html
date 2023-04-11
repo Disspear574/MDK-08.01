@@ -1,48 +1,72 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="common/css/style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Сетка на гридах</title>
+    <title>Document</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/global.css">
+
 </head>
+<!-- Header -->
+<header class="header grid">
+    <nav class="nav flex">
+        <li><a href="#">shop</a></li>
+        <li><a href="#">games</a></li>
+        <li><a href="#">metaverse</a></li>
+    </nav>
+    <div class="logo">
+        <img src="images/logo.svg" alt="logo">
+    </div>
+    <div class="bag">
+        <a href="#"><img src="images/bag.svg"></a>
+    </div>
+</header>
 
 <body>
-    <ul class="gallery">
-        <li class="gallery__item">
-            <img class="gallery__item-photo" src="/common/img/img1.jpg" alt="">
-            <h2 class="gallery__item-title">Высотные здания</h2>
-            <p class="gallery__item-text">2022</p>
-        </li>
-        <li class="gallery__item">
-            <img class="gallery__item-photo" src="/common/img/img2.jpg" alt="">
-            <h2 class="gallery__item-title">Мост через реку</h2>
-            <p class="gallery__item-text">2021</p>
-        </li>
-        <li class="gallery__item">
-            <img class="gallery__item-photo" src="/common/img/img3.jpg" alt="">
-            <h2 class="gallery__item-title">Вокзал</h2>
-            <p class="gallery__item-text">2020</p>
-        </li>
-        <li class="gallery__item">
-            <img class="gallery__item-photo" src="/common/img/img4.jpg" alt="">
-            <h2 class="gallery__item-title">Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium nostrum
-                eius debitis vero.</h2>
-            <p class="gallery__item-text">2019</p>
-        </li>
-        <li class="gallery__item">
-            <img class="gallery__item-photo" src="/common/img/img5.jpg" alt="">
-            <h2 class="gallery__item-title">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam, explicabo!
-            </h2>
-            <p class="gallery__item-text">2018</p>
-        </li>
-        <li class="gallery__item">
-            <img class="gallery__item-photo" src="/common/img/img6.jpg" alt="">
-            <h2 class="gallery__item-title">Lorem ipsum dolor sit amet.</h2>
-            <p class="gallery__item-text">2017</p>
-        </li>
-    </ul>
+    <!-- Presentation -->
+    <section class="presentation flex container">
+        <div class="block">
+            <h1>Meta Quest 2</h1>
+            <h3>Get an Elite Strap free</h3>
+            <span>For a limited time only, save $59.99 USD. Offer ends 1/19/23</span>
+        </div>
+        <div class="buttonprice">
+            <button class="btn" type="submit"><span class="btntext">BUY NOW</span></button>
+            <span class="price">399,99 USD</span>
+        </div>
+        <span class="smt">Meta Quest 2 is for ages 13+</span>
+    </section>
+    <!-- Product Features -->
+    <section class="features grid container">
+        <h3 class="feat__title">product features</h3>
+
+        <div class="feat__list flex">
+            <p class="listf1"><a href="#">01 Graphics</a></p>
+            <p class="listf2"><a href="#">02 Controls</a></p>
+            <p class="listf3"><a href="#">03 Processor</a></p>
+            <p class="listf4"><a href="#">04 Set up your play area</a></p>
+            <p class="listf5"><a href="#">05 Gardian activity</a></p>
+            <p class="listf6"><a href="#">06 Headset casting</a></p>
+        </div>
+        </div>
+        <h2 class="feature__title">easy to set up and safe to use</h2>
+        <img class="feature__img" src="/images/feature.svg" alt="">
+        <div class="second flex">
+            <h3 class="feature_second__title">Graphics</h3>
+            <p class="feature_second__text">With 1832 x 1920 pixels per eye, everything from multiplayer games and
+                productivity apps to 360 0 videos look beyond incredible</p>
+            <video class="feature__vid" src="#" poster="/images/poster.svg"></video>
+        </div>
+    </section>
+    <section class="games flex container">
+        <h3 class="games__title">games</h3>
+
+
+    </section>
+    <script src="js/main.js"></script>
 </body>
 
 </html>
