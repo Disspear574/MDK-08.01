@@ -25,3 +25,22 @@ body {
 .container {
 	max-width: calc(62% + 8px);
 }
+:root {
+	--global__gradient: linear-gradient(#bc10d8, #5000fa);
+}
+.grad__text {
+	background: var(--global__gradient);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	background-clip: text;
+	text-fill-color: transparent;
+}
+.grad__border {
+	border: 2px solid transparent;
+	border-image: var(--global__gradient);
+	border-image-slice: 1;
+}
+.btn_gradient {
+	background: var(--global__gradient);
+	border-radius: 0px;
+}

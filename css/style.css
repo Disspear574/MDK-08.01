@@ -58,7 +58,7 @@
 }
 .price {
 	background: #e5e3e4;
-	padding: 20px 105px;
+	padding: 18px 105px;
 	font-weight: bold;
 }
 h1 {
@@ -77,7 +77,7 @@ h3 {
 	margin-top: 50px;
 	padding: 2px;
 	align-self: flex-start;
-	background: linear-gradient(#bc10d8, #5000fa);
+	background: var(--global__gradient);
 }
 .smt {
 	margin-top: 11px;
@@ -124,6 +124,7 @@ h3 {
 	grid-row: 2;
 	align-self: start;
 	flex-direction: column;
+	border-left: 1px solid #e0e0e0;
 }
 .feature__vid {
 	align-self: end;
@@ -145,12 +146,75 @@ h3 {
 	padding-bottom: 20px;
 	max-width: 60%;
 	text-transform: uppercase;
-	background: -webkit-linear-gradient(#bc10d8, #5000fa);
-	-webkit-background-clip: text;
-	-webkit-text-fill-color: transparent;
 }
 
 /* games */
 .games {
 	margin: 0 auto;
+	margin-top: 82px;
+}
+.games__title {
+	width: 960px;
+}
+.game__title {
+	margin-top: 55px;
+	max-width: 80%;
+	line-height: 39px;
+	padding-bottom: 0;
+}
+.games__text {
+	text-transform: lowercase;
+	margin-top: 10px;
+	line-height: 18px;
+	max-width: 90%;
+}
+.game__desc {
+	flex-direction: column;
+	height: 100%;
+	padding: 20px;
+}
+.game__desc:first-child {
+	border-right: none;
+}
+.game__desc:last-child {
+	border-left: none;
+}
+.game__desc > h3 {
+	margin-top: 10px;
+	font-size: 23px;
+}
+.game__desc > p {
+	margin-top: 14px;
+}
+.games__link {
+	margin-top: auto;
+}
+.games__list {
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-rows: 1;
+	margin-top: 70px;
+	height: 494px;
+	padding: 2px;
+}
+/* Oculus */
+.oculus {
+	margin-top: 150px;
+	position: relative;
+	text-align: center;
+}
+.oculus::before {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	background: url(/images/OCULUS.svg) no-repeat center;
+	height: 400px;
+	width: 100%;
+	z-index: -1;
+}
+.btn_oculus {
+	padding: 3px;
+	background: var(--global__gradient);
+	margin: 0 auto;
+	max-width: 30%;
 }

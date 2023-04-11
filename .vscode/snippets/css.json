@@ -1,0 +1,12 @@
+{
+	"Margin 0 Auto": {
+		"prefix": "m0a",
+		"body": ["margin: 0 auto;"],
+		"description": "Margin 0 Auto"
+	},
+	"Border none": {
+		"prefix": "brn",
+		"body": ["border: none;"],
+		"description": "border none"
+	}
+}
