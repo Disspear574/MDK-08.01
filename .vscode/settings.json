@@ -29,7 +29,7 @@
 	"workbench.colorTheme": "Ayu Dark",
 	"workbench.iconTheme": "material-icon-theme",
 	"workbench.layoutControl.enabled": false,
-	"editor.fontSize": 18,
+	"editor.fontSize": 19,
 	"editor.lineHeight": 25,
 	"editor.fontLigatures": true,
 	// "editor.fontFamily": "Iosevka NFM",
