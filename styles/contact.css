@@ -71,6 +71,7 @@ i {
 .map-title {
 	padding-bottom: 50px;
 }
+
 /* Adaptation */
 @media (max-width: 760px) {
 	.contacts__content {
