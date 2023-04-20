@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html class="html_hide" id="html" lang="ru">
+
+<head>
+	<div id="head"></div>
+	<link rel="stylesheet" href="styles/style.css">
+	<link rel="stylesheet" href="styles/contact.css">
+	<script src="js/jquery.js"></script>
+	<!-- Через JQuery  загружаю  <head>, <header>, <menu>, <footer>, <buttonUP>. Чтобы не повторять одно и тоже для каждой страницы-->
+	<script>
+		$(function () {
+			$("#menu").load("templates/menu.html")
+		})
+		$(function () {
+			$("#head").load("templates/head.html")
+		})
+		$(function () {
+			$("#buttonUP").load("templates/buttonUP.html")
+		});
+	</script>
+
+</head>
+
+<body>
+	<!-- header -->
+	<div id="header"></div>
+	<!-- menu -->
+	<div id="menu"></div>
+	<!-- Main -->
+	<main>
+		<section class="contacts">
+			<h1 class="contacts-title">Наши контакты
+			</h1>
+			<div class="contacts__content grid">
+				<div class="contacts__content-item">
+					<h3 class="contacts__content-item-title">Адрес и график</h3>
+					<ul class="contacts__content-item__list">
+						<li class="contacts__content-item__list-item">
+							<i class="fa-solid fa-location-pin"></i>Екатеринбург, пр. Ленина, 49
+						</li>
+						<li class="contacts__content-item__list-item">
+							<i class="fa-solid fa-clock"></i>Здание: Дом Печати, есть парковка
+						</li>
+						<li class="contacts__content-item__list-item">
+							<i class="fa-solid fa-clock"></i>9:00 - 24:00 ежедневно
+						</li>
+					</ul>
+				</div>
+				<div class="contacts__content-item">
+					<h3 class="contacts__content-item-title">Аренда для съемок</h3>
+					<ul class="contacts__content-item__list">
+						<li class="contacts__content-item__list-item">
+							<i class="fa-solid fa-phone-flip"></i>
+							<a href="tel:+79221573252">8922-157-32-52</a>
+						</li>
+						<li class="contacts__content-item__list-item">
+							<i class="fa-solid fa-phone-flip"></i>
+							<a href="tel:+79221573252">8922-157-32-52</a>
+						</li>
+						<li class="contacts__content-item__list-item">
+							<i class="fa-solid fa-mobile-screen-button"></i>
+							<a href="mailto:photo.ekb@gmail.com">photo.ekb@gmail.com</a>
+						</li>
+					</ul>
+				</div>
+				<div class="contacts__content-item contacts__content-item_2col">
+					<h3 class="contacts__content-item-title">Входы и парковка</h3>
+					<div class="contacts__content-item__content">
+						<img src="img/contacts/001.jpg" alt="Вход" class="contacts__content-item__content-img">
+						<img src="img/contacts/parking_4.jpg" alt="Парковка" class="contacts__content-item__content-img">
+					</div>
+				</div>
+		</section>
+		<section class="map">
+			<h1 class="map-title">Посмотрите по карте где мы находимся и как до нас добраться
+			</h1>
+			<div class="map__content">
+				<script type="text/javascript" charset="utf-8" async
+					src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A27f7e6e8b0ebd2b25899d47b7d4bae3da7f436db50dfda9d7e287215cf69ba3e&amp;width=100%&amp;height=500&amp;lang=ru_RU&amp;scroll=false"></script>
+			</div>
+	</main>
+	<!-- footer -->
+	<div id="footer"></div>
+	<!-- button UP -->
+	<div id="buttonUP"></div>
+
+</body>

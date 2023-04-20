@@ -1,51 +1,37 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html class="html_hide" id="html" lang="ru">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lumi Sky - фотостудия в Екатеринбурге</title>
-    <script src="https://kit.fontawesome.com/06d986b207.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="shortcut icon" href="img/index/favicon.ico" type="image/x-icon">
-
+    <div id="head"></div>
+    <link rel="stylesheet" href="styles/style.css">
+    <script src="active-menu"></script>
+    <script src="js/jquery.js"></script>
+    <script>
+        $(function () {
+            $("#header").load("templates/header.html")
+        })
+        $(function () {
+            $("#menu").load("templates/menu.html")
+        })
+        $(function () {
+            $("#footer").load("templates/footer.html")
+        })
+        $(function () {
+            $("#head").load("templates/head.html")
+        })
+        $(function () {
+            $("#buttonUP").load("templates/buttonUP.html")
+        });
+    </script>
 </head>
 
-<body>
+<body class="body_hide">
     <!-- header -->
-    <header class="header">
-        <div class="header__logo">
-            <a href="index.html" class="logo">
-                <img src="img/index/logo.svg" alt="logo" class="logo-img">
-            </a>
-        </div>
-        <div class="header__address">
-            <span class="address__textr">Екатеринбург, пр. Ленина 49</span>
-        </div>
-        <div class="header__call">
-            <span class="call-text">Связаться</span>
-            <a href="tel:89024097006" class="call-icon">
-                <img src="img/index/gold-phone.svg" alt="tel">
-            </a>
-        </div>
-    </header>
-
+    <div id="header"></div>
     <!-- menu -->
-    <nav class="nav">
-        <ul class="menu">
-            <li class="menu__link"><a href="index.html" class="menu-link active">Главная</a></li>
-            <li class="menu__link"><a href="index.html#servise" class="menu-link">Услуги</a></li>
-            <li class="menu__link"><a href="hall.html" class="menu-link">Залы</a></li>
-            <li class="menu__link"><a href="portfolio.html" class="menu-link">Портфолио</a></li>
-            <li class="menu__link"><a href="contact.html" class="menu-link">Контакты</a></li>
-            <li class="menu__link"><a href="booking.html" class="menu-link btn">Бронировать</a></li>
-        </ul>
-    </nav>
-
+    <div id="menu"></div>
     <!-- Основной контент -->
-    <main class="main">
+    <main>
         <!-- О компании -->
         <section class="about">
             <h1 class="about-title">О компании
@@ -178,41 +164,9 @@
         </section>
     </main>
     <!-- footer -->
-    <footer class="footer">
-        <div class="footer__logo">
-            <img src="img/index/f-logo.png" alt="logo">
-        </div>
-        <div class="footer__link">
-            <ul class="link__list">
-                <li class="link__list-item"><a href="portfolio.html" class="list-link">Портфолио</a></li>
-                <li class="link__list-item"><a href="hall.html" class="list-link">Наши залы</a></li>
-                <li class="link__list-item"><a href="booking.html" class="list-link">Бронирование</a></li>
-            </ul>
-        </div>
-        <div class="footer__social">
-            <p>Мы в соцсетях:</p>
-            <div class="social-icon">
-                <a href="#" class="social__icon-link"><i class="fa-brands fa-facebook-f"></i></a>
-                <a href="#" class="social__icon-link"> <i class="fa-brands fa-instagram"></i></a>
-                <a href="#" class="social__icon-link"> <i class="fa-brands fa-vk"></i></a>
-                <a href="#" class="social__icon-link"><i class="fa-brands fa-twitter"></i></a>
-            </div>
-        </div>
-        <div class="footer__contact">
-            <ul class="contact__list">
-                <li class="contact__list-item"><i class="fa-solid fa-location-pin"></i>Екатеринбург, пр. Ленина, 49</li>
-                <li class="contact__list-item"><i class="fa-solid fa-clock"></i>9:00 - 24:00 ежедневно</li>
-                <li class="contact__list-item"><i class="fa-solid fa-phone-flip"></i>Залы: 8-902-409-70-06</li>
-                <li class="contact__list-item"><i class="fa-solid fa-mobile-screen-button"></i>Фотосессии:
-                    8-922-157-32-52</li>
-            </ul>
-        </div>
-    </footer>
-
-    <button onclick="TOPB()" id="btnup" title="вверх"><img src="img/index/up.png" alt="вверх"></button>
-    <script src="js/main.js"></script>
-    <script src="https://kit.fontawesome.com/06d986b207.js" crossorigin="anonymous"></script>
-
+    <div id="footer"></div>
+    <!-- button UP -->
+    <div id="buttonUP"></div>
 </body>
-<!-- <i class="fa fa-angle-double-up" aria-hidden="true"></i> -->
+
 </html>
