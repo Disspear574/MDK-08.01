@@ -2,6 +2,7 @@
 <html class="html_hide" id="html" lang="ru">
 
 <head>
+
 	<div id="head"></div>
 	<link rel="stylesheet" href="styles/style.css">
 	<script src="js/jquery.js"></script>
@@ -24,9 +25,91 @@
 	<div id="header"></div>
 	<!-- menu -->
 	<div id="menu"></div>
-
-	<!-- footer -->
-	<div id="footer"></div>
-	<!-- button UP -->
-	<div id="buttonUP"></div>
+	<!-- main -->
+	<main class="main">
+		<section class="photo">
+			<h2 class="section-title">Портфолио</h2>
+			<div class="photo-filter">
+				<input type="radio" name="categories" id="all" class="filter-radio" value="all">
+				<input type="radio" name="categories" id="family" class="filter-radio" value="family">
+				<input type="radio" name="categories" id="friends" class="filter-radio" value="friends">
+				<input type="radio" name="categories" id="love" class="filter-radio" value="love">
+				<input type="radio" name="categories" id="person" class="filter-radio" value="person">
+				<input type="radio" name="categories" id="baby" class="filter-radio" value="baby">
+				<input type="radio" id="pet" name="categories" class="filter-radio" value="pet">
+				<ul class="filter-controls">
+					<li><label for="all" class="controls-label">Все фотографии</label></li>
+					<li><label for="family" class="controls-label">Семейные</label></li>
+					<li><label for="friends" class="controls-label">Друзья</label></li>
+					<li><label for="love" class="controls-label">Love Story</label></li>
+					<li><label for="person" class="controls-label">Персональные</label></li>
+					<li><label for="baby" class="controls-label">В ожидании чуда</label></li>
+					<li><label for="pet" class="controls-label">С питомцами</label></li>
+				</ul>
+				<div class="portfolio-grid">
+					<div class="portfolio__item" data-category="family">
+						<img src="img/portfolio/fam1.jpg" alt="family" class="portfolio-img">
+					</div>
+					<div class="portfolio__item" data-category="friends">
+						<img src="img/portfolio/frend2.jpeg" alt="friends" class="portfolio-img">
+					</div>
+					<div class="portfolio__item" data-category="family">
+						<img src="img/portfolio/fam2.JPG" alt="family" class="portfolio-img">
+					</div>
+					<div class="portfolio__item" data-category="family">
+						<img src="img/portfolio/fam3.JPG" alt="family" class="portfolio-img">
+					</div>
+					<div class="portfolio__item" data-category="friends">
+						<img src="img/portfolio/frend1.jpeg" alt="friends" class="portfolio-img">
+					</div>
+					<div class="portfolio__item" data-category="friends">
+						<img src="img/portfolio/frend3.jpg" alt="friends" class="portfolio-img">
+					</div>
+					<div class="portfolio__item" data-category="love">
+						<img src="img/portfolio/love1.jpg" alt="love" class="portfolio-img">
+					</div>
+					<div class="portfolio__item" data-category="love">
+						<img src="img/portfolio/love2.jpeg" alt="love" class="portfolio-img">
+					</div>
+					<div class="portfolio__item" data-category="person">
+						<img src="img/portfolio/pers3.jpg" alt="person" class="portfolio-img">
+					</div>
+					<div class="portfolio__item" data-category="love">
+						<img src="img/portfolio/love3.jpg" alt="love" class="portfolio-img">
+					</div>
+					<div class="portfolio__item" data-category="person">
+						<img src="img/portfolio/pers1.jpg" alt="person" class="portfolio-img">
+					</div>
+					<div class="portfolio__item" data-category="person">
+						<img src="img/portfolio/pers2.jpg" alt="person" class="portfolio-img">
+					</div>
+					<div class="portfolio__item" data-category="pet">
+						<img src="img/portfolio/pet5.jpg" alt="pet" class="portfolio-img">
+					</div>
+					<div class="portfolio__item" data-category="baby">
+						<img src="img/portfolio/preg3.jpg" alt="baby" class="portfolio-img">
+					</div>
+					<div class="portfolio__item" data-category="pet">
+						<img src="img/portfolio/pet4.jpg" alt="pet" class="portfolio-img">
+					</div>
+					<div class="portfolio__item" data-category="baby">
+						<img src="img/portfolio/preg2.jpg" alt="baby" class="portfolio-img">
+					</div>
+					<div class="portfolio__item" data-category="pet">
+						<img src="img/portfolio/pet1.jpeg" alt="pet" class="portfolio-img">
+					</div>
+					<div class="portfolio__item" data-category="pet">
+						<img src="img/portfolio/pet2.jpeg" alt="pet" class="portfolio-img">
+					</div>
+					<div class="portfolio__item" data-category="pet">
+						<img src="img/portfolio/pet3.jpg" alt="pet" class="portfolio-img">
+					</div>
+					<div class="portfolio__item" data-category="baby">
+						<img src="img/portfolio/preg1.jpeg" alt="baby" class="portfolio-img">
+					</div>
+		</section>
+		<!-- footer -->
+		<div id="footer"></div>
+		<!-- button UP -->
+		<div id="buttonUP"></div>
 </body>

@@ -196,7 +196,8 @@ footer {
 #menu {
 	background-color: var(--dark-gray-o);
 	backdrop-filter: blur(18px);
-	-webkit-backdrop-filter: blur(18px);
+	-webkit-backdrop-filter: blur(18px) opacity(1);
+	transition: 1s backdrop-filter ease-in;
 	position: sticky;
 	top: 0;
 	z-index: 100;
@@ -743,4 +744,134 @@ footer {
 #btnup:hover i {
 	color: var(--yellow);
 	transition: all 0.3s;
+}
+#toTop {
+	position: fixed;
+	display: inline-block;
+	bottom: 30px;
+	right: -40px;
+	width: 40px;
+	height: 40px;
+	z-index: 1000;
+	cursor: pointer;
+	text-align: center;
+	color: #fff;
+	border-radius: 4px;
+	background: green;
+	box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.2);
+	opacity: 0;
+	visibility: hidden;
+	transition: all 0.3s ease-in-out;
+}
+#toTop:hover {
+	background: darkgreen;
+}
+
+#toTop svg {
+	position: relative;
+	top: 12px;
+	right: -1px;
+	fill: #fff;
+	transition: all 0.3s ease-in-out;
+}
+
+#toTop:hover svg {
+	cursor: pointer;
+	fill: #fff;
+	transition: all 0.3s ease-in-out;
+}
+
+#toTop.show {
+	opacity: 1;
+	visibility: visible;
+	right: calc(2%);
+}
+/* Portfolio */
+input[type='radio'] {
+	-webkit-appearance: radio;
+}
+.photo-filter {
+	margin: 50px 0;
+}
+.filter-radio {
+	position: absolute;
+	display: none;
+}
+.filter-controls {
+	text-align: center;
+	margin-bottom: 2rem;
+}
+.filter-controls * {
+	display: inline-block;
+}
+.controls-label {
+	background: var(--yellow);
+	padding: 0.5em 1rem;
+	border-radius: 0.25rem;
+	cursor: pointer;
+}
+.portfolio-grid {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	gap: 0.5em;
+}
+
+.portfolio__item {
+	position: relative;
+	z-index: 0;
+	transition: 1s;
+}
+.portfolio-img {
+	width: 100%;
+	height: 40vh;
+	object-fit: cover;
+	border-radius: 5px;
+}
+/* Фильтр */
+[value='all']:checked ~ .portfolio-item[data-category] {
+	display: block;
+}
+[value='family']:checked
+	~ .portfolio-grid
+	.portfolio-item:not([data-category~='family']),
+[value='friends']:checked
+	~ .portfolio-grid
+	.portfolio-item:not([data-category~='friends']),
+[value='love']:checked
+	~ .portfolio-grid
+	.portfolio-item:not([data-category~='love']),
+[value='person']:checked
+	~ .portfolio-grid
+	.portfolio-item:not([data-category~='person']),
+[value='baby']:checked
+	~ .portfolio-grid
+	.portfolio-item:not([data-category~='baby']),
+[value='pet']:checked
+	~ .portfolio-grid
+	.portfolio-item:not([data-category~='pet']) {
+	display: none;
+}
+@media (max-width: 1440px) {
+	.portfolio-grid {
+		grid-template-columns: repeat(3, 1fr);
+	}
+}
+@media (max-width: 1024px) {
+	.portfolio-grid {
+		grid-template-columns: repeat(2, 1fr);
+	}
+}
+
+@media (max-width: 768px) {
+	.portfolio-img {
+		height: 25vh;
+	}
+	.photo-filter {
+		margin: 30px 0;
+	}
+}
+@media (max-width: 768px) {
+	.portfolio-grid {
+		grid-template-columns: 1fr;
+	}
 }
