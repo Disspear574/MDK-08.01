@@ -107,9 +107,54 @@
 					<div class="portfolio__item" data-category="baby">
 						<img src="img/portfolio/preg1.jpeg" alt="baby" class="portfolio-img">
 					</div>
+				</div>
+				<h2 class="section-title">Портфолио</h2>
+				<!-- Слайдер CSS -->
+				<div class="photo__slider">
+					<div class="slides">
+						<input type="radio" name="slide" id="sl1">
+						<input type="radio" name="slide" id="sl2">
+						<input type="radio" name="slide" id="sl3">
+						<input type="radio" name="slide" id="sl4">
+						<div class="picture picture_active">
+							<img src="img/halls/lof1.jpg" alt="halls">
+						</div>
+						<div class="picture">
+							<img src="img/halls/fusion1.jpg" alt="halls">
+						</div>
+						<div class="picture">
+							<img src="img/halls/milan1.jpg" alt="halls">
+						</div>
+						<div class="picture">
+							<img src="img/halls/fusion3.jpg" alt="halls">
+						</div>
+						<div class="slides__control">
+							<label for="sl1" class="bar"></label>
+							<label for="sl2" class="bar"></label>
+							<label for="sl3" class="bar"></label>
+							<label for="sl4" class="bar"></label>
+						</div>
+					</div>
+				</div>
+				<!-- Слайдер JS -->
+				<h2 class="section-title">Прокат одежды и аксессуаров</h2>
+				<div class="swiper">
+					<div class="swiper-wrapper">
+						<div class="swiper-slide"><img src="img/portfolio/rent/rent1.jpg" alt="rent"></div>
+						<div class="swiper-slide"><img src="img/portfolio/rent/rent2.jpg" alt="rent"></div>
+						<div class="swiper-slide"><img src="img/portfolio/rent/rent3.jpg" alt="rent"></div>
+						<div class="swiper-slide"><img src="img/portfolio/rent/rent4.jpg" alt="rent"></div>
+						<div class="swiper-slide"><img src="img/portfolio/rent/rent5.jpg" alt="rent"></div>
+					</div>
+					<div class="swiper-button-prev"></div>
+					<div class="swiper-button-next"></div>
+				</div>
+
 		</section>
+
 		<!-- footer -->
 		<div id="footer"></div>
 		<!-- button UP -->
 		<div id="buttonUP"></div>
+		<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-element-bundle.min.js"></script>
 </body>

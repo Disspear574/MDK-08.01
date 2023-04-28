@@ -809,6 +809,7 @@ input[type='radio'] {
 	padding: 0.5em 1rem;
 	border-radius: 0.25rem;
 	cursor: pointer;
+	margin-top: 0.5em;
 }
 .portfolio-grid {
 	display: grid;
@@ -828,29 +829,30 @@ input[type='radio'] {
 	border-radius: 5px;
 }
 /* Фильтр */
-[value='all']:checked ~ .portfolio-item[data-category] {
+[value='all']:checked ~ .portfolio__item[data-category] {
 	display: block;
 }
 [value='family']:checked
 	~ .portfolio-grid
-	.portfolio-item:not([data-category~='family']),
+	.portfolio__item:not([data-category~='family']),
 [value='friends']:checked
 	~ .portfolio-grid
-	.portfolio-item:not([data-category~='friends']),
+	.portfolio__item:not([data-category~='friends']),
 [value='love']:checked
 	~ .portfolio-grid
-	.portfolio-item:not([data-category~='love']),
+	.portfolio__item:not([data-category~='love']),
 [value='person']:checked
 	~ .portfolio-grid
-	.portfolio-item:not([data-category~='person']),
+	.portfolio__item:not([data-category~='person']),
 [value='baby']:checked
 	~ .portfolio-grid
-	.portfolio-item:not([data-category~='baby']),
+	.portfolio__item:not([data-category~='baby']),
 [value='pet']:checked
-	~ .portfolio-grid
-	.portfolio-item:not([data-category~='pet']) {
+	~ .portfolio__grid
+	.portfolio__item:not([data-category~='pet']) {
 	display: none;
 }
+
 @media (max-width: 1440px) {
 	.portfolio-grid {
 		grid-template-columns: repeat(3, 1fr);
@@ -874,4 +876,77 @@ input[type='radio'] {
 	.portfolio-grid {
 		grid-template-columns: 1fr;
 	}
+	.controls-label {
+		font-size: 14px;
+	}
+	.portfolio-img {
+		aspect-ratio: 1 / 1;
+	}
+}
+/* Слайдер css */
+.photo__slider {
+	height: 70vh;
+	width: 70%;
+	margin: 0 auto;
+	overflow: hidden;
+	border: 2px solid var(--yellow);
+	position: relative;
+}
+input[name='slide'] {
+	position: absolute;
+	visibility: hidden;
+}
+.slides__control {
+	position: absolute;
+	background: var(--dark-gray);
+	display: flex;
+	bottom: 16px;
+	left: 50%;
+	transform: translateX(-50%);
+	border-radius: 8px;
+}
+.bar {
+	display: inline-block;
+	width: 25px;
+	height: 4px;
+	background: var(--yellow);
+	margin: 10px;
+	border-radius: 5px;
+	cursor: pointer;
+	transition: all 0.5s;
+}
+.bar:hover {
+	transform: scale(1.2);
+	background: #fff;
+}
+.slides {
+	display: flex;
+	width: 400%;
+	height: 100%;
+}
+.picture_active {
+	width: 25%;
+	transition: all 0.7s;
+}
+
+#sl1:checked ~ .picture_active {
+	margin-left: 0;
+}
+#sl2:checked ~ .picture_active {
+	margin-left: -25%;
+}
+#sl3:checked ~ .picture_active {
+	margin-left: -60%;
+}
+#sl4:checked ~ .picture_active {
+	margin-left: -90%;
+}
+.swiper {
+	width: 70%;
+	margin: 0 auto;
+	height: 70vh;
+}
+.swiper-wrapper img {
+	max-width: 100%;
+	object-fit: cover;
 }

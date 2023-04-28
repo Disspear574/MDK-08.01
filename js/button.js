@@ -1,3 +1,14 @@
+// Swiper slider
+const swiper = new Swiper('.swiper', {
+	speed: 400,
+	spaceBetween: 100,
+	navigation: {
+		nextE1: '.swiper-button-next',
+		prevE1: '.swiper-button-prev',
+	},
+	effect: 'cube',
+})
+
 let btn = document.getElementById('btnup') // элемент с id - btnup становится переменной btn
 window.onscroll = function () {
 	scroll()
