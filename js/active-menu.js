@@ -48,4 +48,7 @@ function TOPB() {
 	document.documentElement.scrollTop = 0 // При нажатии возращаемся наверх
 }
 var html = document.getElementById('html')
-html.classList.add('html_visible')
+function asd() {
+	html.classList.add('html_visible')
+}
+setTimeout(asd, 1000)
