@@ -33,3 +33,5 @@ function scroll() {
 function TOPB() {
 	document.documentElement.scrollTop = 0 // При нажатии возращаемся наверх
 }
+var html = document.getElementById('html')
+html.classList.add('html_visible')
