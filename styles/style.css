@@ -95,7 +95,9 @@ body {
 a {
 	text-decoration: none;
 }
-
+a:-webkit-any-link {
+	text-decoration: none;
+}
 ul {
 	list-style: none;
 }
