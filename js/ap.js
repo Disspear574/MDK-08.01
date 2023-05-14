@@ -1,5 +1,5 @@
 $(function () {
-	$('.menu a').each(function () {
+	$('.menu-link').each(function () {
 		var location = window.location.href
 		var link = this.href
 		if (location == link) {
