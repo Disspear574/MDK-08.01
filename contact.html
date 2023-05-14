@@ -1,25 +1,36 @@
 <!DOCTYPE html>
-<html class="html_hide" id="html" lang="ru">
+<html id="html" class="html_hide" lang="ru">
 
 <head>
-	<div id="head"></div>
+	<!-- Meta -->
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="theme-color" media="(prefers-color-scheme: light)" content="#e8cb0f" />
+	<meta name="theme-color" media="(prefers-color-scheme: dark)" content="#2a363b" />
+	<!-- Title -->
+	<title>Lumi Sky - фотостудия в Екатеринбурге</title>
+	<!-- Links -->
+	<link rel="stylesheet" href="/styles/reset.css">
 	<link rel="stylesheet" href="styles/style.css">
 	<link rel="stylesheet" href="styles/contact.css">
+	<link rel="shortcut icon" href="/img/index/favicon.ico" type="image/x-icon">
+	<!-- Scripts -->
 	<script src="js/jquery.js"></script>
 	<script src="js/main.js"></script>
-	<!-- Через JQuery  загружаю  <head>, <header>, <menu>, <footer>, <buttonUP>. Чтобы не повторять одно и тоже для каждой страницы-->
-	<script>
-		$(function () {
-			$("#menu").load("templates/menu.html")
+	<script src="https://kit.fontawesome.com/06d986b207.js" crossorigin="anonymous"></script>
+	<script>		$(function () {
+			$("#header").load("templates/header.html")
 		})
 		$(function () {
-			$("#head").load("templates/head.html")
+			$("#footer").load("templates/footer.html")
+		})
+		$(function () {
+			$("#menu").load("templates/menu.html")
 		})
 		$(function () {
 			$("#buttonUP").load("templates/buttonUP.html")
 		});
 	</script>
-
 </head>
 
 <body>
