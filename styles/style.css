@@ -92,7 +92,7 @@ body {
 	opacity: 1 !important;
 	transition: 0.5s opacity ease-in-out;
 }
-.html a {
+a {
 	text-decoration: none;
 }
 
