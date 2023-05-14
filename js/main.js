@@ -1,20 +1,18 @@
-// Active Menu
-const currentLocation = location.href
-const menuItem = document.querySelectorAll('.menu-link')
-const menuLenght = menuItem.length
-for (let i = 0; i < menuLenght; i++) {
-	if (menuItem[i].href === currentLocation) {
-		menuItem[i].className = 'menu-link active'
-	} else {
-		menuItem[i].className = 'menu-link passive'
-	}
-}
-
-// Html Visible
+$(function () {
+	$('#menu .nav .menu a').each(function () {
+		var location = window.location.href
+		var link = this.href
+		if (location == link) {
+			$(this).addClass('active')
+		}
+	})
+})
+const activepage = window.location
+console.log(activepage)
 setTimeout(function () {
 	var element = document.getElementById('html')
 	element.classList.add('html_visible')
-}, 100)
+}, 200)
 
 // Swiper slider
 const swiper = new Swiper('.swiper', {
