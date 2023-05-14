@@ -1,13 +1,14 @@
 // Active Menu
-$(function () {
-	$('.menu a').each(function () {
-		var location = window.location.href
-		var link = this.href
-		if (location == link) {
-			$(this).addClass('active')
-		}
-	})
-})
+const currentLocation = location.href
+const menuItem = document.querySelectorAll('.menu-link')
+const menuLenght = menuItem.length
+for (let i = 0; i < menuLenght; i++) {
+	if (menuItem[i].href === currentLocation) {
+		menuItem[i].className = 'menu-link active'
+	} else {
+		menuItem[i].className = 'menu-link passive'
+	}
+}
 
 // Html Visible
 setTimeout(function () {
