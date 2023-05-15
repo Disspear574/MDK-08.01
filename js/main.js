@@ -4,7 +4,7 @@ setTimeout(function () {
 }, 100)
 
 // Swiper slider
-const swiper = new Swiper('.swiper', {
+const swiper = new swiper('.swiper', {
 	speed: 400,
 	spaceBetween: 100,
 	navigation: {
